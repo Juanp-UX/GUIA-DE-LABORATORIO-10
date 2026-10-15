@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormProductoComponent } from '../../shared/organism/producto-form/producto-form';
 
 @Component({
   imports: [CommonModule,FormProductoComponent],

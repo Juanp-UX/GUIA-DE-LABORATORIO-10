@@ -1,0 +1,57 @@
+/* Estilos de botones de la clínica: azul marino institucional (#06075e) y verde salud. */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.25rem;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #06075e;
+    border-color: #06075e;
+}
+
+.btn-primary:hover {
+    background-color: #0b0d8f;
+    border-color: #0b0d8f;
+}
+
+.btn-success {
+    background-color: #0f9d8a;
+    border-color: #0f9d8a;
+}
+
+.btn-success:hover {
+    background-color: #0b7f6f;
+    border-color: #0b7f6f;
+}
+
+.btn-danger {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+.btn-danger:hover {
+    background-color: #9e2e22;
+    border-color: #9e2e22;
+}
+
+.btn:hover {
+    box-shadow: 0 6px 18px rgba(6, 7, 94, 0.25);
+    transform: translateY(-1px);
+}
+
+.btn:focus-visible {
+    outline: 3px solid rgba(15, 157, 138, 0.45);
+    outline-offset: 2px;
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

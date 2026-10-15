@@ -1,11 +1,14 @@
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-
-
 @Component({
-  imports: [CommonModule],
-  standalone: true,
   selector: 'template-three-column',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './three-column.html',
 })
-export class ThreeColumnTemplate {}
+export class ThreeColumnTemplate {
+  @Input() titulo = '';
+  @Input() tituloIzquierda = '';
+  @Input() tituloCentro = '';
+  @Input() tituloDerecha = '';
+}
