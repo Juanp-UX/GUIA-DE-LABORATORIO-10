@@ -1,0 +1,19 @@
+<label [for]="id" class="form-label block font-medium mb-1">
+  {{ label }}
+  @if (required) {
+    <span aria-hidden="true">*</span>
+  }
+</label>
+<select
+  [id]="id"
+  [required]="required"
+  [disabled]="disabled"
+  [value]="value"
+  (change)="onSelect($event)"
+  (blur)="onBlur()"
+  class="form-input w-full"
+>
+  @for (option of options; track option.value) {
+    <option [value]="option.value">{{ option.label }}</option>
+  }
+</select>

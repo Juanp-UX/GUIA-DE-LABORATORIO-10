@@ -1,0 +1,74 @@
+<form #form class="form-horizontal" (ngSubmit)="onSubmit(form)">
+
+  <molecule-form-field>
+    <atom-input-text
+      label="Nombres"
+      id="med-nombres"
+      name="nombres"
+      type="text"
+      placeholder="Digite los nombres"
+      [required]="true"
+      [(ngModel)]="medico.nombres">
+    </atom-input-text>
+  </molecule-form-field>
+
+  <molecule-form-field>
+    <atom-input-text
+      label="Apellidos"
+      id="med-apellidos"
+      name="apellidos"
+      type="text"
+      placeholder="Digite los apellidos"
+      [required]="true"
+      [(ngModel)]="medico.apellidos">
+    </atom-input-text>
+  </molecule-form-field>
+
+  <molecule-form-field>
+    <atom-select
+      label="Especialidad"
+      id="med-especialidad"
+      name="especialidad"
+      [options]="especialidadesOptions"
+      [required]="true"
+      [(ngModel)]="medico.especialidad">
+    </atom-select>
+  </molecule-form-field>
+
+  <molecule-form-field>
+    <atom-input-text
+      label="Años trabajando en la clínica"
+      id="med-anios"
+      name="anios"
+      type="number"
+      placeholder="Digite los años de trabajo"
+      [required]="true"
+      [(ngModel)]="medico.anios">
+    </atom-input-text>
+  </molecule-form-field>
+
+  <molecule-form-field>
+    <atom-select
+      label="Género"
+      id="med-genero"
+      name="genero"
+      [options]="generoOptions"
+      [required]="true"
+      [(ngModel)]="medico.genero">
+    </atom-select>
+  </molecule-form-field>
+
+  <molecule-form-field>
+    <atom-input-text
+      label="Fecha de nacimiento"
+      id="med-fecha"
+      name="fechaNacimiento"
+      type="date"
+      placeholder="Seleccione la fecha de nacimiento"
+      [required]="true"
+      [(ngModel)]="medico.fechaNacimiento">
+    </atom-input-text>
+  </molecule-form-field>
+
+  <app-button label="Registrar médico" type="submit" color="success"></app-button>
+</form>
